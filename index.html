@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+        <title>GRIP Website</title>
+    </head>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        .navbar-brand {
+            margin: auto 100px;
+        }
+        .img-logo {
+            height: 50px;
+        }
+        .nav-link {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+        .btn-grad {background-image: linear-gradient(to right, #D9BD00 0%, #F11800  80%, #D9BD00  100%)}
+        .btn-grad {
+            margin: 10px;
+            padding: 15px 30px !important;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: #fff !important;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 50px;
+            display: block;
+            border: none;
+        }
+        .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .graduate-rotational-section {
+            margin: 50px 150px;
+        }
+        .img-arrow {
+            height: 500px;
+            float: right;
+        }
+        .register-now {
+            width:35%;
+        }
+        .img-member {
+            height: 60px;
+        }
+        .margin-to-next {
+            margin-left: -15px;
+        }
+
+        .ellipse-left {
+            margin-left: -100px;
+            height: 200px;
+        }
+        .ellipse-overlap {
+            height: 60px;
+            margin-top: 150px;
+            margin-left: -70px;
+        }
+
+        .numbers-section {
+            margin: 0px 200px 20px 200px;
+        }
+        .numbers-bar {
+            margin: 0;
+            background-color: #EEEEEE;
+            border-radius: 30px;
+            padding: 25px 20px;
+        }
+
+        .grip_section {
+            margin: 75px 275px;
+        }
+        .grip-blocks-section {
+            margin:50px 200px
+        }
+        .grip-blocks {
+            background-color: #EEEEEE;
+            padding: 20px 0px 20px 0px;
+            border-radius: 30px;
+        }
+        .img-grip {
+            height: 75px;
+        }
+        .ellipse-right {
+            margin-left: 750px;
+            height: 200px;
+        }
+        .ellipse-right-overlap {
+            height: 50px;
+            margin-left: 750px;
+            margin-top: -350px;
+        }
+
+        .inspiring-section {
+            margin: 75px 200px;
+        }
+        .img-union {
+            height: 350px;
+            float: right;
+        }
+        .union-ellipse {
+            height: 100px;
+            margin-left: 475px;
+            margin-top: -500px;
+        }
+
+        .steps-to-apply {
+            margin: 50px 400px;
+        }
+        .accordion-item {
+            background-color: #EEEEEE !important;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border: none;
+        }
+        .accordion-button {
+            background-color: #EEEEEE !important;
+            color: black !important;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .navbar-brand {
+                margin: 0;
+            }
+            .img-logo {
+                height: 40px;
+            }
+
+            .graduate-rotational-section {
+                margin: 10px 25px;
+            }
+            .only-desktop {
+                display: none;
+            }
+            .img-arrow {
+                height: 250px;
+                text-align: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                float: none;
+            }
+            .register-now {
+                width:auto;
+                border-radius: 10px;
+            }
+
+            .ellipse-left {
+                margin-left: -75px;
+                height: 150px;
+            }
+            .ellipse-overlap {
+                height: 45px;
+                margin-top: 100px;
+                margin-left: -55px;
+            }
+            
+            .numbers-section {
+                margin: 15px 0px 15px 0px;
+            }
+            
+            .grip_section {
+                margin: 20px auto;
+            }
+            .grip-blocks-section {
+                margin: 0;
+            }
+            .mobile-blocks {
+                margin-top: 30px;
+            }
+
+            .inspiring-section {
+                margin: 20px 20px;
+            }
+            .img-union {
+                height: 150px;
+            }
+
+            .steps-to-apply {
+                margin: 10px 20px;
+            }
+        }
+    </style>
+    <body>
+        <!-- navigation header -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="assests/img/logo.png" class="img-logo" alt="spark-foundation"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">What is GRIP?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Steps to apply</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-grad" href="#">Join the Network</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- line-break -->
+        <img src="assests/img/line-break.png" alt="line-break">
+
+        <!-- graduate-rotational-section -->
+        <section class="graduate-rotational-section">
+            <div class="row">
+                <div class="col-md-6 graduate-text-col">
+                    <h1>Graduate<br class="only-desktop">
+                        Rotational<br class="only-desktop">
+                        Internship<br class="only-desktop">
+                        Program
+                    </h1><br>
+                    <p>The program aims to enable students to be<br>
+                    professionally capable and entrepreneurial.</p><br>
+                    <a class="nav-link btn-grad register-now" href="#">Register Now</a><br>
+                    <img src="assests/img/member.png" alt="member" class="img-member">
+                    <img src="assests/img/member.png" alt="member" class="img-member margin-to-next">
+                    <img src="assests/img/member.png" alt="member" class="img-member margin-to-next">
+                    <span>Joined by 1,50,000+ students</span>
+                </div>
+                <div class="col-md-6">
+                    <img src="assests/img/arrow.png" class="img-arrow" alt="arrow">
+                </div>
+            </div>
+        </section>
+
+        <img src="assests/img/ellipse.png" class="ellipse-left">
+        <img src="assests/img/ellipse.png" class="ellipse-overlap">
+
+        <!-- numbers-section -->
+        <section class="numbers-section">
+            <div class="d-flex justify-content-evenly numbers-bar">
+                <div class="p-2 bd-highlight">
+                    <h1>1,50,000</h1>
+                    <p>Amazing Professionals</p>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <img src="assests/img/line-break-vertical.png" alt="vertical-break">
+                </div>
+                <div class="p-2 bd-highlight">
+                    <h1>27+</h1>
+                    <p>Countries</p>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <img src="assests/img/line-break-vertical.png" alt="vertical-break">
+                </div>
+                <div class="p-2 bd-highlight">
+                    <h1>50+</h1>
+                    <p>Batches</p>
+                </div>
+              </div>
+        </section>
+
+        <!-- all about grip -->
+        <section class="grip_section">
+            <h1 class="text-center">All about GRIP</h1>
+            <p class="text-center">The Graduate Rotational Internship Program is an unique offer for students and recent graduates to experience and
+                join The Sparks Foundation. In addition to skills specific tasks, we encourage interns to build a credible professional profile.</p>
+        </section>
+        <section class="grip-blocks-section">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row grip-blocks">
+                        <div class="col-3">
+                            <img src="assests/img/certificate.png" alt="certificate" class="img-grip">
+                        </div>
+                        <div class="col-7">
+                            <h4>Completion Certificate</h4>
+                            <p>Completion Certificate is provided after success completion of one month of internship.</p>
+                        </div>
+                    </div><br>
+                    <div class="row grip-blocks">
+                        <div class="col-3">
+                            <img src="assests/img/tsf.png" alt="certificate" class="img-grip">
+                        </div>
+                        <div class="col-7">
+                            <h4>Opportunity to join TSF</h4>
+                            <p>Opportunity to be a part of TSF
+                                is given to best candidates and they
+                                are hired on special hiring plan.
+                            </p>
+                        </div>
+                    </div><br>
+                    <div class="row grip-blocks">
+                        <div class="col-3">
+                            <img src="assests/img/networking.png" alt="certificate" class="img-grip">
+                        </div>
+                        <div class="col-7">
+                            <h4>Networking Opportunity</h4>
+                            <p>Networking opportunity as a global,
+                                multicultural and rare diverse working
+                                environment is available for interns.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <img src="assests/img/ellipse.png" class="ellipse-right">
+                    <img src="assests/img/ellipse.png" class="ellipse-right-overlap">
+                </div>
+                <div class="col-md-5">
+                    <div class="row grip-blocks mobile-blocks">
+                        <div class="col-3">
+                            <img src="assests/img/recommand.png" alt="certificate" class="img-grip">
+                        </div>
+                        <div class="col-7">
+                            <h4>Recommendation Letter</h4>
+                            <p>Recommendation Letter provided
+                                to top performing interns based on
+                                various assessment parameters.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <br>
+                    <div class="row grip-blocks">
+                        <div class="col-3">
+                            <img src="assests/img/workshop.png" alt="certificate" class="img-grip">
+                        </div>
+                        <div class="col-7">
+                            <h4>Workshops/ guidance</h4>
+                            <p>Workshop and audience for personality
+                                insights, profile building, interviews
+                                skills and scrum training sessions.
+                            </p>
+                        </div>
+                    </div><br>
+                    <div class="row grip-blocks">
+                        <div class="col-3">
+                            <img src="assests/img/badges.png" alt="certificate" class="img-grip">
+                        </div>
+                        <div class="col-7">
+                            <h4>Special Badges</h4>
+                            <p>Badges will be given to interns who
+                                have submitted tasks efficiently and
+                                helped the fellow interns in their tasks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- inspiring section -->
+        <section class="inspiring-section">
+            <div class="row">
+                <div class="col-6 graduate-text-col">
+                    <h1>Inspiring<br class="only-desktop">
+                        Innovating<br class="only-desktop">
+                        Integrating
+                    </h1><br>
+                    <p>The Sparks Foundation inspires students to innovate
+                        and help them integrate to build a better humankind.</p><br>
+                    <a class="nav-link btn-grad register-now" href="#">Register Now</a>
+                </div>
+                <div class="col-6">
+                    <img src="assests/img/union.png" class="img-union" alt="arrow">
+                    <img src="assests/img/ellipse.png" class="union-ellipse">
+                </div>
+            </div>
+        </section>
+
+        <!-- steps to apply section -->
+        <section class="steps-to-apply">
+            <div class="row">
+                <h1 class="text-center">Steps to apply</h1>
+                <p class="text-center">To obtain the GRIP selection certificate, please read the points
+                    carefully and follow EXACTLY step-by-step as instructed
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    1. Choose the program
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div><br>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div><br>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+         
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+        -->
+  </body>
+</html>

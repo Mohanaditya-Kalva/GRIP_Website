@@ -1,0 +1,321 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Muli';
+}
+.navbar-brand {
+    margin: auto 100px;
+}
+.img-logo {
+    height: 50px;
+}
+.nav-link {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+.btn-grad {background-image: linear-gradient(to right, #D9BD00 0%, #F11800  80%, #D9BD00  100%)}
+.btn-grad {
+    margin: 10px;
+    padding: 15px 30px !important;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #fff !important;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 50px;
+    display: block;
+    border: none;
+}
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.graduate-rotational-section {
+    margin: 50px 150px;
+}
+.img-arrow {
+    height: 500px;
+    float: right;
+}
+.register-now {
+    width:35%;
+}
+.img-member {
+    height: 60px;
+}
+.margin-to-next {
+    margin-left: -15px;
+}
+
+.ellipse-left {
+    margin-left: -100px;
+    height: 200px;
+}
+.ellipse-overlap {
+    height: 60px;
+    margin-top: 150px;
+    margin-left: -70px;
+}
+
+.numbers-section {
+    margin: 0px 200px 20px 200px;
+}
+.numbers-bar {
+    margin: 0;
+    background-color: #EEEEEE;
+    border-radius: 30px;
+    padding: 25px 20px;
+}
+
+.grip_section {
+    margin: 75px 275px;
+}
+.grip-blocks-section {
+    margin:50px 200px
+}
+.grip-blocks {
+    background-color: #EEEEEE;
+    padding: 20px 0px 20px 0px;
+    border-radius: 30px;
+}
+.img-grip {
+    height: 75px;
+}
+.ellipse-right {
+    margin-left: 750px;
+    height: 200px;
+}
+.ellipse-right-overlap {
+    height: 50px;
+    margin-left: 750px;
+    margin-top: -350px;
+}
+
+.inspiring-section {
+    margin: 75px 200px;
+}
+.img-union {
+    height: 350px;
+    float: right;
+}
+.union-ellipse {
+    height: 100px;
+    margin-left: 475px;
+    margin-top: -500px;
+}
+
+.steps-to-apply {
+    margin: 50px 400px;
+}
+.accordion-item {
+    background-color: #EEEEEE !important;
+    border: none;
+}
+.accordion-item h2{
+    padding: 15px 20px;
+}
+.accordion-button {
+    background-color: #EEEEEE !important;
+    color: black !important; 
+    font-weight: 600;
+}
+.listing-row p{
+    color: #0079D5;
+}
+.ellipse-left-accordation {
+    height: 200px;
+    margin-left: -500px;
+    margin-top: -550px;
+}
+.ellipse-overlap-accordation {
+    height: 60px;
+    margin-top: -425px;
+    margin-left: -60px;
+}
+.ellipse-right-accordation {
+    height: 200px;
+    margin-top: -150px;
+    margin-left: 1025px;
+}
+.ellipse-right-overlap-accordation {
+    height: 60px;
+    margin-top: -390px;
+    margin-left: 1035px;
+}
+
+.footer {
+    margin: auto 200px;
+}
+
+.what-our-student-say {
+    background-image : url("img/rectangle.png");
+}
+.what-our-student-say h1 {
+    color: #FFFF;
+    text-align: center;
+}
+.custom-card-row {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 30px 35px;
+    position: relative;
+    margin: auto;
+}
+.main-row {
+    padding: 75px 0px;
+}
+.testimonial-row {
+    margin: 75px auto;
+}
+.first-slide {
+    left: -100px;
+    opacity: 0.2;
+}
+.thrid-slide {
+    right: -100px;
+    opacity: 0.2;
+}
+.grey-left {
+    margin-top: -25px;
+    margin-left: -180px;
+}
+.grey-right {
+    float: right;
+    margin-top: -25px;
+    margin-right: -75px;
+}
+.grey-left-arrow {
+    margin-top: -30px;
+    margin-left: -43px;
+}
+.grey-right-arrow {
+    float: right;
+    margin-top: -15px;
+    margin-right: -55px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-brand {
+        margin: 0;
+    }
+    .img-logo {
+        height: 40px;
+    }
+
+    .graduate-rotational-section {
+        margin: 10px 25px;
+    }
+    .only-desktop {
+        display: none;
+    }
+    .img-arrow {
+        height: 250px;
+        text-align: center;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .register-now {
+        width:auto !important;
+        border-radius: 10px;
+    }
+
+    .ellipse-left {
+        margin-left: -75px;
+        height: 150px;
+    }
+    .ellipse-overlap {
+        height: 45px;
+        margin-top: 100px;
+        margin-left: -55px;
+    }
+    
+    .numbers-section {
+        margin: 20px 20px;
+    }
+    
+    .grip_section {
+        margin: 50px 25px;
+    }
+    .grip-blocks-section {
+        margin: 20px 25px;
+    }
+    .mobile-blocks {
+        margin-top: 30px;
+    }
+    .ellipse-right, .ellipse-right-overlap, .ellipse-left, .ellipse-overlap {
+        display: none;
+    }
+
+    .inspiring-section {
+        margin: 50px 25px;
+    }
+    .img-union {
+        height: 150px;
+    }
+
+    .steps-to-apply {
+        margin: 50px 20px;
+    }
+    .ellipse-left-accordation, .ellipse-overlap-accordation {
+        display: none;
+    }
+    .ellipse-right-accordation, .ellipse-right-overlap-accordation {
+        display: none;
+    }
+
+    .footer {
+        margin: 10px 25px;
+    }
+
+    .first-slide, .thrid-slide, .grey-left, .grey-right, .grey-left-arrow, .grey-right-arrow {
+       display: none;
+    }
+    .main-row {
+        padding: 50px 0px;
+    }
+    .testimonial-row {
+        margin: 25px auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .graduate-rotational-section {
+        margin: 50px 30px;
+    }
+    .img-arrow {
+        height: 300px;
+    }
+    .register-now {
+        width: 50%;
+    }
+    .numbers-section {
+        margin: 50px 30px;
+    }
+    .grip_section {
+        margin: 50px 50px;
+    }
+    .grip-blocks-section {
+        margin: 50px 30px;
+    }
+    .grip-blocks-section .col-7 {
+        margin: auto 10px;
+    }
+    .inspiring-section {
+        margin: 50px 30px;
+    }
+    .grey-left {
+        margin-left: -180px;
+    }
+    .steps-to-apply {
+        margin: 50px 50px;
+    }
+    .footer {
+        margin: auto 30px;
+    }
+}

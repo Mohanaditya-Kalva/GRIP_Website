@@ -248,7 +248,7 @@ body {
     .mobile-blocks {
         margin-top: 30px;
     }
-    .ellipse-right, .ellipse-right-overlap, .ellipse-left, .ellipse-overlap {
+    .ellipse-right, .ellipse-right-overlap, .ellipse-left, .ellipse-overlap, .union-ellipse {
         display: none;
     }
 

@@ -125,13 +125,42 @@
         }
         .accordion-item {
             background-color: #EEEEEE !important;
-            border-bottom-left-radius: 25px;
-            border-bottom-right-radius: 25px;
             border: none;
+        }
+        .accordion-item h2{
+            padding: 15px 20px;
         }
         .accordion-button {
             background-color: #EEEEEE !important;
-            color: black !important;
+            color: black !important; 
+            font-weight: 600;
+        }
+        .listing-row p{
+            color: #0079D5;
+        }
+        .ellipse-left-accordation {
+            height: 200px;
+            margin-left: -500px;
+            margin-top: -550px;
+        }
+        .ellipse-overlap-accordation {
+            height: 60px;
+            margin-top: -425px;
+            margin-left: -60px;
+        }
+        .ellipse-right-accordation {
+            height: 200px;
+            margin-top: -150px;
+            margin-left: 1025px;
+        }
+        .ellipse-right-overlap-accordation {
+            height: 60px;
+            margin-top: -390px;
+            margin-left: 1035px;
+        }
+
+        .footer {
+            margin: auto 200px;
         }
 
         @media only screen and (max-width: 600px) {
@@ -151,7 +180,7 @@
             .img-arrow {
                 height: 250px;
                 text-align: center;
-                display: block;
+                display: none;
                 margin-left: auto;
                 margin-right: auto;
                 float: none;
@@ -172,21 +201,24 @@
             }
             
             .numbers-section {
-                margin: 15px 0px 15px 0px;
+                margin: 20px 20px;
             }
             
             .grip_section {
-                margin: 20px auto;
+                margin: 20px 25px;
             }
             .grip-blocks-section {
-                margin: 0;
+                margin: 20px 25px;
             }
             .mobile-blocks {
                 margin-top: 30px;
             }
+            .ellipse-right, .ellipse-right-overlap {
+                display: none;
+            }
 
             .inspiring-section {
-                margin: 20px 20px;
+                margin: 20px 25px;
             }
             .img-union {
                 height: 150px;
@@ -194,6 +226,16 @@
 
             .steps-to-apply {
                 margin: 10px 20px;
+            }
+            .ellipse-left-accordation, .ellipse-overlap-accordation {
+                display: none;
+            }
+            .ellipse-right-accordation, .ellipse-right-overlap-accordation {
+                display: none;
+            }
+
+            .footer {
+                margin: 10px 25px;
             }
         }
     </style>
@@ -386,6 +428,8 @@
             </div>
         </section>
 
+        <!-- what our students say -->
+
         <!-- steps to apply section -->
         <section class="steps-to-apply">
             <div class="row">
@@ -405,38 +449,194 @@
                             </h2>
                             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                                 <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <p>Go through the brief job descriptions of the internship below to make sure
+                                        you have applied to or are applying for correct one. The internship Function
+                                        will be mentions on your GRIP selection Certificate.
+                                    </p>
+                                    <div class="row listing-row">
+                                        <div class="col-md-6">
+                                            <p>Web Development</p>
+                                            <p>Mobile App Development</p>
+                                            <p>Data Science & Business Analytics</p>
+                                            <p>Content Development</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>Digital Marketing</p>
+                                            <p>IoT and Computer Vision</p>
+                                            <p>Campus Ambassador</p>
+                                            <p>Talent Acquisition</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div><br>
+                        <img src="assests/img/ellipse.png" class="ellipse-left-accordation">
+                        <img src="assests/img/ellipse.png" class="ellipse-overlap-accordation">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                    Accordion Item #2
+                                    2. Apply here
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                                 <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <p>Go through the brief job descriptions of the internship below to make sure
+                                        you have applied to or are applying for correct one. The internship Function
+                                        will be mentions on your GRIP selection Certificate.
+                                    </p>
+                                    <div class="row listing-row">
+                                        <div class="col-md-6">
+                                            <p>Web Development</p>
+                                            <p>Mobile App Development</p>
+                                            <p>Data Science & Business Analytics</p>
+                                            <p>Content Development</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>Digital Marketing</p>
+                                            <p>IoT and Computer Vision</p>
+                                            <p>Campus Ambassador</p>
+                                            <p>Talent Acquisition</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div><br>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                Accordion Item #3
+                                    3. Verify Yourself
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                                 <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
+                                    <p>Go through the brief job descriptions of the internship below to make sure
+                                        you have applied to or are applying for correct one. The internship Function
+                                        will be mentions on your GRIP selection Certificate.
+                                    </p>
+                                    <div class="row listing-row">
+                                        <div class="col-md-6">
+                                            <p>Web Development</p>
+                                            <p>Mobile App Development</p>
+                                            <p>Data Science & Business Analytics</p>
+                                            <p>Content Development</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>Digital Marketing</p>
+                                            <p>IoT and Computer Vision</p>
+                                            <p>Campus Ambassador</p>
+                                            <p>Talent Acquisition</p>
+                                        </div>
+                                    </div>
+                                </div>
                           </div>
+                        </div><br>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    4. FAQs
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                                <div class="accordion-body">
+                                    <p>Go through the brief job descriptions of the internship below to make sure
+                                        you have applied to or are applying for correct one. The internship Function
+                                        will be mentions on your GRIP selection Certificate.
+                                    </p>
+                                    <div class="row listing-row">
+                                        <div class="col-md-6">
+                                            <p>Web Development</p>
+                                            <p>Mobile App Development</p>
+                                            <p>Data Science & Business Analytics</p>
+                                            <p>Content Development</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>Digital Marketing</p>
+                                            <p>IoT and Computer Vision</p>
+                                            <p>Campus Ambassador</p>
+                                            <p>Talent Acquisition</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><br>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    5. Help and Support
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                                <div class="accordion-body">
+                                    <p>Go through the brief job descriptions of the internship below to make sure
+                                        you have applied to or are applying for correct one. The internship Function
+                                        will be mentions on your GRIP selection Certificate.
+                                    </p>
+                                    <div class="row listing-row">
+                                        <div class="col-md-6">
+                                            <p>Web Development</p>
+                                            <p>Mobile App Development</p>
+                                            <p>Data Science & Business Analytics</p>
+                                            <p>Content Development</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>Digital Marketing</p>
+                                            <p>IoT and Computer Vision</p>
+                                            <p>Campus Ambassador</p>
+                                            <p>Talent Acquisition</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><br>
+                        <img src="assests/img/ellipse.png" class="ellipse-right-accordation">
+                        <img src="assests/img/ellipse.png" class="ellipse-right-overlap-accordation">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="text-center">
+                                    Ready to join GRIP?<br class="only-desktop">
+                                    Let's get started
+                                </h1><br>
+                                <a class="nav-link btn-grad register-now" href="#" style="margin: auto;">Register Now</a><br>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- line-break -->
+        <img src="assests/img/line-break.png" alt="line-break">
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assests/img/logo.png" class="img-logo" alt="spark-foundation">
+                    <p>The sparks foundation is working to bring parity in
+                        education, making sure children have equal opportunity
+                        at success, irrespective of the financial background.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6><strong>Partners</strong></h6>
+                    <p>Xalitus</p>
+                    <p>AINE AI</p>
+                    <p>Code for India</p>
+                </div>
+                <div class="col-md-3">
+                    <h6><strong>Follow us on</strong></h6>
+                    <img src="assests/img/twitter.png" class="social-img" alt="social-media">
+                    <img src="assests/img/youtube.png" class="social-img" alt="social-media">
+                    <img src="assests/img/linkedin.png" class="social-img" alt="social-media">
+                    <img src="assests/img/fb.png" class="social-img" alt="social-media">
+                    <img src="assests/img/insta.png" class="social-img" alt="social-media"><br>
+                    <div class="row">
+                        <div class="col-md-12">    
+                            <a class="nav-link btn-grad" href="#">Join the Network</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
         

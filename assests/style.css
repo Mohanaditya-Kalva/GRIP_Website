@@ -2,6 +2,9 @@ body {
     overflow-x: hidden;
     font-family: 'Muli';
 }
+a {
+    text-decoration: none;
+}
 .navbar-brand {
     margin: auto 100px;
 }
@@ -17,7 +20,7 @@ body {
 .btn-grad {background-image: linear-gradient(to right, #D9BD00 0%, #F11800  80%, #D9BD00  100%)}
 .btn-grad {
     margin: 10px;
-    padding: 15px 30px !important;
+    padding: 15px !important;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
@@ -36,6 +39,9 @@ body {
 
 .graduate-rotational-section {
     margin: 50px 150px;
+}
+.graduate-rotational-section p{
+    text-align: justify;
 }
 .img-arrow {
     height: 500px;
@@ -64,6 +70,9 @@ body {
 .numbers-section {
     margin: 0px 200px 20px 200px;
 }
+.numbers-section p {
+    text-align: center;
+}
 .numbers-bar {
     margin: 0;
     background-color: #EEEEEE;
@@ -82,6 +91,12 @@ body {
     padding: 20px 0px 20px 0px;
     border-radius: 30px;
 }
+.grip-blocks-para {
+    height: 130px;
+    text-align: justify;
+    text-justify: distribute;
+    overflow-y: auto;
+}
 .img-grip {
     height: 75px;
 }
@@ -98,14 +113,19 @@ body {
 .inspiring-section {
     margin: 75px 200px;
 }
+.inspiring-section p{
+    text-align: justify;
+    
+}
 .img-union {
     height: 350px;
     float: right;
 }
 .union-ellipse {
     height: 100px;
-    margin-left: 475px;
-    margin-top: -500px;
+    position: relative;
+    top: 20%;
+    left: 85%;
 }
 
 .steps-to-apply {
@@ -148,7 +168,10 @@ body {
 }
 
 .footer {
-    margin: auto 200px;
+    margin: 25px 200px;
+}
+.social-img {
+    padding: 5px 3px;
 }
 
 .what-our-student-say {
@@ -181,7 +204,7 @@ body {
 }
 .grey-left {
     margin-top: -25px;
-    margin-left: -180px;
+    margin-left: -310px;
 }
 .grey-right {
     float: right;
@@ -207,7 +230,7 @@ body {
     }
 
     .graduate-rotational-section {
-        margin: 10px 25px;
+        margin: 10px 25px !important;
     }
     .only-desktop {
         display: none;
@@ -221,8 +244,9 @@ body {
         float: none;
     }
     .register-now {
-        width:auto !important;
+        width:50% !important;
         border-radius: 10px;
+        margin: auto;
     }
 
     .ellipse-left {
@@ -236,31 +260,36 @@ body {
     }
     
     .numbers-section {
-        margin: 20px 20px;
+        margin: 20px 20px !important;
     }
     
     .grip_section {
-        margin: 50px 25px;
+        margin: 50px 25px !important;
     }
     .grip-blocks-section {
-        margin: 20px 25px;
+        margin: 20px 25px !important;
     }
     .mobile-blocks {
         margin-top: 30px;
+    }
+    .grip-blocks-para {
+        height: auto;
+        text-align: justify;
+        text-justify: distribute;
     }
     .ellipse-right, .ellipse-right-overlap, .ellipse-left, .ellipse-overlap, .union-ellipse {
         display: none;
     }
 
     .inspiring-section {
-        margin: 50px 25px;
+        margin: 50px 25px !important;
     }
     .img-union {
         height: 150px;
     }
 
     .steps-to-apply {
-        margin: 50px 20px;
+        margin: 50px 20px !important;
     }
     .ellipse-left-accordation, .ellipse-overlap-accordation {
         display: none;
@@ -316,6 +345,9 @@ body {
         margin: 50px 50px;
     }
     .footer {
-        margin: auto 30px;
+        margin: 25px 30px;
+    }
+    .ellipse-right, .ellipse-right-overlap, .ellipse-right-accordation, .ellipse-right-overlap-accordation, .union-ellipse {
+        display: none;
     }
 }

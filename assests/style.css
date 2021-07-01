@@ -112,6 +112,7 @@ h1 {
   background-color: #eeeeee;
   padding: 20px 0px 20px 0px;
   border-radius: 30px;
+  height: 350px;
 }
 .grip-blocks h4 {
   font-size: 18px;
@@ -209,6 +210,7 @@ h1 {
   padding: 30px 35px;
   position: relative;
   margin: auto;
+  height: 500px;
 }
 .main-row {
   padding: 75px 0px;
@@ -300,6 +302,7 @@ h1 {
   }
   .grip-blocks {
     border-radius: 15px;
+    height: auto;
   }
   .mobile-blocks {
     margin-top: 30px;

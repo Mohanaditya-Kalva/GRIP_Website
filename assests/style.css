@@ -193,6 +193,9 @@ h1 {
 .footer {
   margin: 25px 200px;
 }
+.footer a {
+  color: black;
+}
 .social-img {
   padding: 5px 3px;
 }
@@ -359,6 +362,10 @@ h1 {
   .testimonial-row {
     margin: 25px auto;
   }
+  .custom-card-row {
+    height: 600px !important;
+    width: auto !important;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -401,6 +408,10 @@ h1 {
   .ellipse-right-overlap-accordation,
   .union-ellipse {
     display: none;
+  }
+  .custom-card-row {
+    height: 700px;
+    width: 296px;
   }
 }
 

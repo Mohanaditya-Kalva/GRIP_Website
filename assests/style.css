@@ -91,6 +91,10 @@ h1 {
 }
 .numbers-section p {
   text-align: center;
+  margin: 20px auto;
+}
+.numbers-section h1 {
+  text-align: center;
 }
 .numbers-bar {
   margin: 0;
@@ -102,17 +106,24 @@ h1 {
 .grip_section {
   margin: 75px 275px;
 }
+.grip_section h1 {
+  text-align: center;
+}
 .grip_section p {
   text-align: justify;
 }
 .grip-blocks-section {
   margin: 50px 200px;
 }
+.grip-blocks-section .col-lg-8 {
+  margin: 0px -20px 0px -20px;
+}
 .grip-blocks {
   background-color: #eeeeee;
   padding: 20px 0px 20px 0px;
   border-radius: 30px;
   height: 350px;
+  overflow: auto;
 }
 .grip-blocks h4 {
   font-size: 18px;
@@ -120,6 +131,7 @@ h1 {
 }
 .grip-blocks-para {
   font-size: 16px;
+  text-align: justify;
 }
 .img-grip {
   height: 75px;
@@ -142,13 +154,12 @@ h1 {
 }
 .img-union {
   height: 350px;
-  float: right;
 }
 .union-ellipse {
   height: 100px;
   position: relative;
-  top: 20%;
-  left: 85%;
+  top: -20%;
+  right: 18%;
 }
 
 .steps-to-apply {
@@ -172,11 +183,11 @@ h1 {
 .ellipse-left-accordation {
   height: 200px;
   margin-left: -500px;
-  margin-top: -550px;
+  margin-top: -450px;
 }
 .ellipse-overlap-accordation {
   height: 60px;
-  margin-top: -425px;
+  margin-top: -330px;
   margin-left: -60px;
 }
 .ellipse-right-accordation {
@@ -196,6 +207,10 @@ h1 {
 .footer a {
   color: black;
 }
+.footer p {
+  margin: 15px 0px;
+  width: 75%;
+}
 .social-img {
   padding: 5px 3px;
 }
@@ -213,13 +228,14 @@ h1 {
   padding: 30px 35px;
   position: relative;
   margin: auto;
-  height: 500px;
+  height: 250px;
 }
 .main-row {
   padding: 75px 0px;
 }
 .testimonial-row {
   margin: 75px auto;
+  display: none;
 }
 .first-slide {
   position: relative;
@@ -249,8 +265,190 @@ h1 {
   margin-top: -15px;
   margin-right: -55px;
 }
+.accordion-body p {
+  text-align: justify;
+}
+.graduate-text h1 {
+  display: flex;
+  justify-content: flex-start;
+}
+.graduate-text h1::before {
+  content: "Inspiring";
+  animation: animate infinite 3s;
+  padding-left: 10px;
+}
+.bd-highlight {
+  margin-top: 15px;
+}
+@keyframes animate {
+  
+  0% {
+      content: "Inspiring";
+  }
 
+  50% {
+      content: "Innovating";
+  }
+
+  75% {
+      content: "Integrating";
+  }
+}
+
+/* the slides */
+.slick-slide {
+  margin: 0 10px;
+  opacity: 0.5;
+}
+/* the parent */
+.slick-list {
+  margin: 0 -10px;
+}
+.slick-active {
+  opacity: 1 !important;
+}
+/* .slick-prev {
+  left: 50px;
+  z-index: 1;
+}
+.slick-next {
+  right: 50px;
+} */
 @media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.75rem !important;
+  }
+  .navbar-brand {
+    margin: 0 !important;
+  }
+  .img-logo {
+    height: 40px;
+  }
+
+  .graduate-rotational-section {
+    margin: 10px 25px !important;
+  }
+  .only-desktop {
+    display: none;
+  }
+  .img-arrow {
+    height: 250px;
+    text-align: center;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+  .register-now {
+    width: 50% !important;
+    margin: auto;
+  }
+
+  .ellipse-left {
+    margin-left: -75px;
+    height: 150px;
+  }
+  .ellipse-overlap {
+    height: 45px;
+    margin-top: 100px;
+    margin-left: -55px;
+  }
+
+  .numbers-section {
+    margin: 50px auto !important;
+  }
+  .numbers-bar {
+    border-radius: 0px !important;
+  }
+
+  .grip_section {
+    margin: 50px 25px !important;
+  }
+  .grip_section h1 {
+    text-align: justify;
+  }
+  .grip-blocks-section {
+    margin: 0px 25px !important;
+  }
+  .grip-blocks {
+    border-radius: 15px;
+    height: auto;
+  }
+  .mobile-blocks {
+    margin-top: 30px;
+  }
+  .grip-blocks h4 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .grip-blocks-para {
+    font-size: 14px;
+  }
+  .ellipse-right,
+  .ellipse-right-overlap,
+  .ellipse-left,
+  .ellipse-overlap,
+  .union-ellipse {
+    display: none;
+  }
+
+  .inspiring-section {
+    margin: 50px 25px !important;
+  }
+  .img-union {
+    height: 150px !important;
+  }
+
+  .steps-to-apply {
+    margin: 50px 20px !important;
+  }
+  .ellipse-left-accordation,
+  .ellipse-overlap-accordation {
+    display: none;
+  }
+  .ellipse-right-accordation,
+  .ellipse-right-overlap-accordation {
+    display: none;
+  }
+
+  .footer {
+    margin: 25px 25px;
+  }
+  .footer p {
+    width: 100%;
+  }
+
+  .first-slide,
+  .thrid-slide,
+  .grey-left,
+  .grey-right,
+  .grey-left-arrow,
+  .grey-right-arrow {
+    display: none;
+  }
+  .main-row {
+    padding: 50px 0px;
+  }
+  .testimonial-row {
+    display: block !important;
+    margin: 25px auto;
+  }
+  .center {
+    display: none;
+  }
+  .custom-card-row {
+    height: 500px !important;
+    width: auto !important;
+  }
+  .actions {
+    display: none;
+  }
+  .grip-blocks-section .col-lg-8 {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 600px) {
   h1 {
     font-size: 1.75rem !important;
   }
@@ -300,6 +498,9 @@ h1 {
   .grip_section {
     margin: 50px 25px !important;
   }
+  .grip_section h1 {
+    text-align: justify;
+  }
   .grip-blocks-section {
     margin: 0px 25px !important;
   }
@@ -329,7 +530,7 @@ h1 {
     margin: 50px 25px !important;
   }
   .img-union {
-    height: 150px;
+    height: 200px !important;
   }
 
   .steps-to-apply {
@@ -347,6 +548,9 @@ h1 {
   .footer {
     margin: 25px 25px;
   }
+  .footer p {
+    width: 100%;
+  }
 
   .first-slide,
   .thrid-slide,
@@ -362,13 +566,25 @@ h1 {
   .testimonial-row {
     margin: 25px auto;
   }
+  .center {
+    display: none;
+  }
+  .testimonial-row {
+    display: block !important;
+  }
+  .actions {
+    display: none;
+  }
   .custom-card-row {
-    height: 600px !important;
+    height: 375px !important;
     width: auto !important;
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .navbar-brand {
+    margin: auto 50px;
+  }
   .graduate-rotational-section {
     margin: 50px 30px;
   }
@@ -388,13 +604,22 @@ h1 {
     margin: 50px 30px;
   }
   .grip-blocks-section .col-7 {
-    margin: auto 10px;
+    margin: 0px 10px;
   }
   .inspiring-section {
     margin: 50px 30px;
   }
   .grey-left {
     margin-left: -180px;
+  }
+  .img-union {
+    height: 300px;
+  }
+  .testimonial-row {
+    display: none;
+  }
+  .custom-card-row {
+    height: 325px;
   }
   .steps-to-apply {
     margin: 50px 50px;
@@ -409,9 +634,32 @@ h1 {
   .union-ellipse {
     display: none;
   }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 992px) {
+  .register-now {
+    width: 50%;
+  }
+  .img-arrow {
+    height: 300px;
+  }
+  .testimonial-row {
+    display: none;
+  }
   .custom-card-row {
-    height: 700px;
-    width: 296px;
+    height: 300px;
+  }
+  .ellipse-left-accordation, .ellipse-overlap-accordation, .union-ellipse {
+    display: none;
+  }
+  .grip-blocks-section {
+    margin: 50px 150px;
+  }
+  .inspiring-section {
+    margin: 75px 150px;
+  }
+  .steps-to-apply {
+    margin: 50px 200px;
   }
 }
 
@@ -457,13 +705,38 @@ h1 {
   width: 40px;
   height: 40px;
 }
-
 .carousel .carousel__actions button#carousel__button--prev {
   margin-left: -10px;
 }
 
 .carousel .carousel__actions button#carousel__button--next {
   margin-right: 15px;
+}
+
+.actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  margin: 150px auto;
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+}
+
+.actions button {
+  border-radius: 50px;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.actions button#button--prev {
+  margin-left: 40px;
+}
+
+.actions button#button--next {
+  margin-right: 20px;
 }
 
 @keyframes fadeVisibility {

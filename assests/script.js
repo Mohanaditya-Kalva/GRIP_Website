@@ -39,7 +39,18 @@ function moveToPrevSlide() {
 // GRIP’s Timeline and Important Dates
 const d = new Date();
 const date = d.getDate();
-if (date < '26') {
+if (date < '25') {
+    const plusOneMonth = d.getMonth();
+    const plusTwoMonth = d.getMonth()+1;
+    const plusThreeMonth = d.getMonth()+2;
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    document.getElementById("apply_date").innerHTML = "24th of " + months[plusOneMonth] +  " (11:59 PM SGT)";
+    document.getElementById("select_email").innerHTML = "Last week of " + months[plusOneMonth];
+    document.getElementById("start_date").innerHTML = "1st week of " + months[plusTwoMonth];
+    document.getElementById("assignment_date").innerHTML = "by 21st of " + months[plusTwoMonth];
+    document.getElementById("feedback_date").innerHTML = "by 25th of the " + months[plusTwoMonth];
+    document.getElementById("certificate_date").innerHTML = "1st week of " + months[plusThreeMonth];
+} else {
     const plusOneMonth = d.getMonth()+1;
     const plusTwoMonth = d.getMonth()+2;
     const plusThreeMonth = d.getMonth()+3;
@@ -48,17 +59,6 @@ if (date < '26') {
     document.getElementById("select_email").innerHTML = "Last week of " + months[plusOneMonth];
     document.getElementById("start_date").innerHTML = "1st week of " + months[plusTwoMonth];
     document.getElementById("assignment_date").innerHTML = "by 21st of " + months[plusTwoMonth];
-    document.getElementById("feedback_date").innerHTML = "by 25th of the September " + months[plusTwoMonth];
-    document.getElementById("certificate_date").innerHTML = "1st week of " + months[plusThreeMonth];
-} else {
-    const plusOneMonth = d.getMonth()+2;
-    const plusTwoMonth = d.getMonth()+3;
-    const plusThreeMonth = d.getMonth()+4;
-    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    document.getElementById("apply_date").innerHTML = "24th of " + months[plusOneMonth] +  " (11:59 PM SGT)";
-    document.getElementById("select_email").innerHTML = "Last week of " + months[plusOneMonth];
-    document.getElementById("start_date").innerHTML = "1st week of " + months[plusTwoMonth];
-    document.getElementById("assignment_date").innerHTML = "by 21st of " + months[plusTwoMonth];
-    document.getElementById("feedback_date").innerHTML = "by 25th of the September " + months[plusTwoMonth];
+    document.getElementById("feedback_date").innerHTML = "by 25th of the " + months[plusTwoMonth];
     document.getElementById("certificate_date").innerHTML = "1st week of " + months[plusThreeMonth];
 }

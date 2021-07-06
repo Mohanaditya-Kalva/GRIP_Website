@@ -122,7 +122,7 @@ h1 {
   background-color: #eeeeee;
   padding: 20px 0px 20px 0px;
   border-radius: 30px;
-  height: 350px;
+  height: 230px;
   overflow: auto;
 }
 .grip-blocks h4 {
@@ -368,7 +368,7 @@ h1 {
     text-align: justify;
   }
   .grip-blocks-section {
-    margin: 0px 25px !important;
+    margin: 0px 25px 0px 25px !important;
   }
   .grip-blocks {
     border-radius: 15px;
@@ -417,6 +417,9 @@ h1 {
   .footer p {
     width: 100%;
   }
+  .footer a {
+    width: 50%;
+  }
 
   .first-slide,
   .thrid-slide,
@@ -437,7 +440,7 @@ h1 {
     display: none;
   }
   .custom-card-row {
-    height: 500px !important;
+    height: 600px !important;
     width: auto !important;
   }
   .actions {
@@ -578,6 +581,9 @@ h1 {
   .custom-card-row {
     height: 375px !important;
     width: auto !important;
+  }
+  .footer a {
+    width: 50%;
   }
 }
 

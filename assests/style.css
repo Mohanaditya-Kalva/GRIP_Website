@@ -72,6 +72,9 @@ h1 {
 .graduate-rotational-section p {
   text-align: justify;
 }
+.graduate-text-col span {
+  padding: 0px 15px;
+}
 .img-arrow {
   height: 500px;
   float: right;
@@ -164,6 +167,8 @@ h1 {
 }
 .inspiring-section p {
   text-align: justify;
+  text-indent: -10px;
+  padding: 0px 10px;
 }
 .img-union {
   height: 350px;
@@ -225,7 +230,7 @@ h1 {
   width: 75%;
 }
 .social-img {
-  padding: 5px 3px;
+  padding: 5px 5px;
 }
 
 .what-our-student-say {
@@ -240,8 +245,8 @@ h1 {
   border-radius: 25px;
   padding: 30px 35px;
   position: relative;
-  margin: auto;
-  height: 250px;
+  margin: 0px 85px;
+  height: 350px;
 }
 .main-row {
   padding: 75px 0px;
@@ -287,7 +292,12 @@ h1 {
 }
 .graduate-text h1::before {
   content: "Inspiring";
-  animation: animate infinite 3s;
+  animation: animate infinite 5s;
+  padding-left: 10px;
+}
+.graduate-text .animaate-para::before {
+  content: "To Inspire, motivate and encourage students to learn, create and help build a better society";
+  animation: animatepara infinite 5s;
   padding-left: 10px;
 }
 .bd-highlight {
@@ -307,14 +317,42 @@ h1 {
   }
 }
 
+@keyframes animatepara {
+  0% {
+    content: "To Inspire, motivate and encourage students to learn, create and help build a better society.";
+  }
+
+  50% {
+    content: "To teach new ways of thinking, to innovate and solve the problems on their own.";
+  }
+
+  75% {
+    content: "To let the students integrate, and help each other, learn from each other and do well together.";
+  }
+}
+
 /* the slides */
 .slick-slide {
-  margin: 0 10px;
-  opacity: 0.5;
+  /* margin: 0 10px;
+  opacity: 0.5; */
 }
 /* the parent */
 .slick-list {
+  /* margin: 0 -10px; */
+}
+
+/* Add spacing between images */
+.slick-slide {
+  margin: 0px 10px;
+  opacity: 0.5;
+}
+
+/* Fix external margins */
+.slick-list {
   margin: 0 -10px;
+}
+.slick-slider {
+  overflow: hidden;
 }
 .slick-active {
   opacity: 1 !important;
@@ -326,6 +364,37 @@ h1 {
 .slick-next {
   right: 50px;
 } */
+.splide__slide {
+  opacity: 0.5;
+}
+.is-active,
+.is-visible {
+  opacity: 1 !important;
+}
+.splide__arrow--prev {
+  left: 20em !important;
+}
+.splide__arrow--next {
+  right: 20em !important;
+}
+.splide__arrow {
+  width: 3em !important;
+  height: 3em !important;
+  opacity: 1 !important;
+  background: #eee !important;
+}
+.center {
+  display: none;
+}
+.actions {
+  display: none !important;
+}
+.social-icons {
+  padding: 0px;
+}
+.footer-btn {
+  margin: auto -40px;
+}
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 1.75rem !important;
@@ -343,10 +412,12 @@ h1 {
   .only-desktop {
     display: none;
   }
+  .graduate-img-col {
+    text-align: center;
+  }
   .img-arrow {
     height: 250px;
     text-align: center;
-    display: none;
     margin-left: auto;
     margin-right: auto;
     float: none;
@@ -430,7 +501,10 @@ h1 {
     width: 100%;
   }
   .footer a {
-    width: 50%;
+    width: 75%;
+  }
+  .footer-btn {
+    margin: auto -20px;
   }
 
   .first-slide,
@@ -451,12 +525,19 @@ h1 {
   .center {
     display: none;
   }
+  .actions {
+    display: none !important;
+  }
+  .splide {
+    display: none;
+  }
   .what-our-student-say {
     background-image: url("img/rectangle-mobile.png");
   }
   .custom-card-row {
-    height: 600px !important;
+    height: 550px !important;
     width: auto !important;
+    margin: 0px;
   }
   .actions {
     display: none;
@@ -483,10 +564,12 @@ h1 {
   .only-desktop {
     display: none;
   }
-  .img-arrow {
-    height: 250px;
+  .graduate-img-col {
     text-align: center;
-    display: none;
+  }
+  .img-arrow {
+    height: 350px;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     float: none;
@@ -587,6 +670,12 @@ h1 {
   .center {
     display: none;
   }
+  .actions {
+    display: none !important;
+  }
+  .splide {
+    display: none;
+  }
   .testimonial-row {
     display: block !important;
   }
@@ -596,9 +685,13 @@ h1 {
   .custom-card-row {
     height: 375px !important;
     width: auto !important;
+    margin: 0px;
   }
   .footer a {
     width: 50%;
+  }
+  .footer-btn {
+    margin: auto -20px;
   }
 }
 
@@ -639,8 +732,17 @@ h1 {
   .testimonial-row {
     display: none;
   }
+  .splide {
+    display: none;
+  }
   .custom-card-row {
     height: 325px;
+  }
+  .center {
+    display: block;
+  }
+  .actions {
+    display: flex !important;
   }
   .steps-to-apply {
     margin: 50px 50px;
@@ -655,6 +757,9 @@ h1 {
   .union-ellipse {
     display: none;
   }
+  .footer-btn {
+    margin: auto -20px;
+  }
 }
 
 @media screen and (max-width: 1300px) and (min-width: 992px) {
@@ -668,7 +773,17 @@ h1 {
     display: none;
   }
   .custom-card-row {
-    height: 300px;
+    height: 450px;
+    margin: 0px 50px;
+  }
+  .splide__arrow--prev {
+    left: 18em !important;
+  }
+  .splide__arrow--next {
+    right: 18em !important;
+  }
+  .center {
+    display: none;
   }
   .ellipse-left-accordation,
   .ellipse-overlap-accordation,
@@ -683,6 +798,9 @@ h1 {
   }
   .steps-to-apply {
     margin: 50px 200px;
+  }
+  .footer-btn {
+    margin: auto -20px;
   }
 }
 

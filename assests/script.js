@@ -47,8 +47,8 @@ if (date < '25') {
     document.getElementById("apply_date").innerHTML = "24th of " + months[plusOneMonth] +  " (11:59 PM SGT)";
     document.getElementById("select_email").innerHTML = "Last week of " + months[plusOneMonth];
     document.getElementById("start_date").innerHTML = "1st week of " + months[plusTwoMonth];
-    document.getElementById("assignment_date").innerHTML = "by 21st of " + months[plusTwoMonth];
-    document.getElementById("feedback_date").innerHTML = "by 25th of the " + months[plusTwoMonth];
+    document.getElementById("assignment_date").innerHTML = "by 21st of " + months[plusTwoMonth] +  " (11:59 PM SGT)";
+    document.getElementById("feedback_date").innerHTML = "by 25th of the " + months[plusTwoMonth] +  " (11:59 PM SGT)";
     document.getElementById("certificate_date").innerHTML = "1st week of " + months[plusThreeMonth];
 } else {
     const plusOneMonth = d.getMonth()+1;

@@ -1,5 +1,13 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -msbox-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: "Muli";
 }
 a {
@@ -13,13 +21,17 @@ h1 {
   margin: auto 100px;
 }
 .img-logo {
-  height: 50px;
+  height: 60px;
 }
 .nav-link {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-left: 1rem !important;
   padding-right: 1rem !important;
+}
+.navbar-brand span {
+  color: grey;
+  font-size: 14px;
 }
 .btn-grad {
   background-image: linear-gradient(
@@ -281,17 +293,16 @@ h1 {
   margin-top: 15px;
 }
 @keyframes animate {
-  
   0% {
-      content: "Inspiring";
+    content: "Inspiring";
   }
 
   50% {
-      content: "Innovating";
+    content: "Innovating";
   }
 
   75% {
-      content: "Integrating";
+    content: "Integrating";
   }
 }
 
@@ -438,6 +449,9 @@ h1 {
   }
   .center {
     display: none;
+  }
+  .what-our-student-say {
+    background-image: url("img/rectangle-mobile.png");
   }
   .custom-card-row {
     height: 600px !important;
@@ -655,7 +669,9 @@ h1 {
   .custom-card-row {
     height: 300px;
   }
-  .ellipse-left-accordation, .ellipse-overlap-accordation, .union-ellipse {
+  .ellipse-left-accordation,
+  .ellipse-overlap-accordation,
+  .union-ellipse {
     display: none;
   }
   .grip-blocks-section {

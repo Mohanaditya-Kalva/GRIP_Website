@@ -7,8 +7,8 @@ img {
   max-width: 100%;
 }
 body {
-  overflow-x: hidden !important;
-  font-family: "Muli";
+  overflow-x: hidden;
+  width: 100%;
 }
 a {
   text-decoration: none;
@@ -146,7 +146,7 @@ h1 {
   text-align: justify;
 }
 .img-grip {
-  height: 75px;
+  height: auto;
 }
 .ellipse-right {
   margin-left: 750px;

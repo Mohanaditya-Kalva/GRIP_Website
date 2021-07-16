@@ -62,3 +62,87 @@ if (date < '25') {
     document.getElementById("feedback_date").innerHTML = "by 25th of the " + months[plusTwoMonth];
     document.getElementById("certificate_date").innerHTML = "1st week of " + months[plusThreeMonth];
 }
+
+
+function changeOne() {
+    $(".inspiring-section__custom-card-def").css(
+        {
+            "background-image": "none", 
+            "background-color": "#eeee", 
+            "color" : "black"
+        }
+    );
+    $(".inspiring-section__custom-card-2").css(
+        {
+            "background-color": "none", 
+            "background-image": "linear-gradient( to right, #d9bd00 0%, #f11800 150%, #d9bd00 100% )", 
+            "color" : "#ffff"
+        }
+    );
+}
+function changeTwo() {
+    $(".inspiring-section__custom-card-2").css(
+        {
+            "background-image": "none", 
+            "background-color": "#eeee", 
+            "color" : "black"
+        }
+    );
+    $(".inspiring-section__custom-card-3").css(
+        {
+            "background-color": "none", 
+            "background-image": "linear-gradient( to right, #d9bd00 0%, #f11800 150%, #d9bd00 100% )", 
+            "color" : "#ffff"
+        }
+    );
+}
+function changeThree() {
+    $(".inspiring-section__custom-card-def").css(
+        {
+            "background-color": "none", 
+            "background-image": "linear-gradient( to right, #d9bd00 0%, #f11800 150%, #d9bd00 100% )", 
+            "color" : "#ffff"
+        }
+    );
+    $(".inspiring-section__custom-card-3").css(
+        {
+            "background-image": "none", 
+            "background-color": "#eeee", 
+            "color" : "black"
+        }
+    );
+}
+
+for (var i = 0; i < 100; i++) {
+    setTimeout(changeOne, 5000);
+    setTimeout(changeTwo, 10000);
+    setTimeout(changeThree, 15000);
+
+    setTimeout(changeOne, 20000);
+    setTimeout(changeTwo, 25000);
+    setTimeout(changeThree, 30000);
+
+    setTimeout(changeOne, 35000);
+    setTimeout(changeTwo, 40000);
+    setTimeout(changeThree, 45000);
+
+    setTimeout(changeOne, 50000);
+    setTimeout(changeTwo, 55000);
+    setTimeout(changeThree, 60000);
+
+    setTimeout(changeOne, 65000);
+    setTimeout(changeTwo, 70000);
+    setTimeout(changeThree, 75000);
+
+    setTimeout(changeOne, 80000);
+    setTimeout(changeTwo, 85000);
+    setTimeout(changeThree, 90000);
+
+    setTimeout(changeOne, 95000);
+    setTimeout(changeTwo, 100000);
+    setTimeout(changeThree, 150000);
+
+    setTimeout(changeOne, 200000);
+    setTimeout(changeTwo, 250000);
+    setTimeout(changeThree, 300000);
+}

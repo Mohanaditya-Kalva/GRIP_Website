@@ -72,8 +72,20 @@ h1 {
 .graduate-rotational-section p {
   text-align: justify;
 }
+.graduate-text {
+  background-color: #eeeeee;
+  padding: 25px 25px;
+  border-radius: 25px;
+}
 .graduate-text-col span {
   padding: 0px 15px;
+}
+.graduate-text-col h1 {
+  font-size: 3.8rem !important;
+  font-weight: 600;
+}
+.graduate-text-col a {
+  margin: 10px -15px !important;
 }
 .img-arrow {
   height: 500px;
@@ -129,7 +141,7 @@ h1 {
   text-align: justify;
 }
 .grip-blocks-section {
-  margin: 50px 200px;
+  margin: 50px 350px;
 }
 .grip-blocks-section .col-lg-8 {
   margin: 0px -20px 0px -20px;
@@ -138,7 +150,7 @@ h1 {
   background-color: #eeeeee;
   padding: 20px 0px 20px 0px;
   border-radius: 30px;
-  height: 230px;
+  height: auto;
   overflow: auto;
 }
 .grip-blocks h4 {
@@ -165,11 +177,11 @@ h1 {
 .inspiring-section {
   margin: 75px 200px;
 }
-.inspiring-section p {
+/* .inspiring-section p {
   text-align: justify;
   text-indent: -10px;
   padding: 0px 10px;
-}
+} */
 .img-union {
   height: 350px;
 }
@@ -239,6 +251,7 @@ h1 {
 .what-our-student-say h1 {
   color: #ffff;
   text-align: center;
+  padding: 15px 0px;
 }
 .custom-card-row {
   background-color: #fff;
@@ -289,7 +302,9 @@ h1 {
 .graduate-text h1 {
   display: flex;
   justify-content: flex-start;
+  text-indent: -10px;
 }
+
 .graduate-text h1::before {
   content: "Inspiring";
   animation: animate infinite 5s;
@@ -303,34 +318,140 @@ h1 {
 .bd-highlight {
   margin-top: 15px;
 }
+.graduate-text {
+  -webkit-animation: bgcolorchange 5s infinite; /* Chrome, Safari, Opera */
+  animation: 5s infinite bgcolorchange;
+}
+@keyframes bgcolorchange {
+  0% {
+    background-image: linear-gradient(
+      to right,
+      #d9bd00 0%,
+      #f11800 80%,
+      #d9bd00 100%
+    );
+  }
+  50% {
+    background-image: linear-gradient(
+      to right,
+      #d9bd00 0%,
+      #f11800 80%,
+      #d9bd00 100%
+    );
+  }
+  75% {
+    background-image: linear-gradient(
+      to right,
+      #d9bd00 0%,
+      #f11800 80%,
+      #d9bd00 100%
+    );
+  }
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bgcolorchange {
+  0% {
+    background-image: linear-gradient(
+      to right,
+      #d9bd00 0%,
+      #f11800 80%,
+      #d9bd00 100%
+    );
+  }
+  50% {
+    background-image: linear-gradient(
+      to right,
+      #d9bd00 0%,
+      #f11800 80%,
+      #d9bd00 100%
+    );
+  }
+  75% {
+    background-image: linear-gradient(
+      to right,
+      #d9bd00 0%,
+      #f11800 80%,
+      #d9bd00 100%
+    );
+  }
+}
 @keyframes animate {
   0% {
     content: "Inspiring";
+    color: #fff;
   }
 
   50% {
     content: "Innovating";
+    color: #fff;
   }
 
   75% {
     content: "Integrating";
+    color: #fff;
   }
 }
 
 @keyframes animatepara {
   0% {
     content: "To Inspire, motivate and encourage students to learn, create and help build a better society.";
+    color: #fff;
   }
 
   50% {
     content: "To teach new ways of thinking, to innovate and solve the problems on their own.";
+    color: #fff;
   }
 
   75% {
     content: "To let the students integrate, and help each other, learn from each other and do well together.";
+    color: #fff;
   }
 }
+.grip-blocks__txt {
+  margin: 20px auto 5px auto;
+}
+.grip-blocks__img {
+  margin: 15px 0px;
+  text-align: center;
+}
+.inspiring-section__custom-card-def {
+  background-image: linear-gradient(
+    to right,
+    #d9bd00 0%,
+    #f11800 150%,
+    #d9bd00 100%
+  );
+  color: #fff;
+  padding: 30px 25px;
+  border-radius: 25px;
+  animation: 5s infinite background-fade;
+}
 
+.inspiring-section__custom-card-2 {
+  background-color: #eeee;
+  padding: 30px 25px;
+  border-radius: 25px;
+  animation: 10s infinite bgcolorchangede2;
+}
+.inspiring-section__custom-card-3 {
+  background-color: #eeee;
+  padding: 30px 25px;
+  border-radius: 25px;
+  animation: 15s infinite bgcolorchangede2;
+}
+.inspiring-section__btn-row {
+  margin: 30px auto;
+}
+.inspiring-section__btn {
+  color: #fff;
+  background: linear-gradient(to right, #d9bd00 0%, #f11800 150%, #d9bd00 100%);
+  padding: 15px 25px;
+  border-radius: 50px;
+}
+.inspiring-section__btn:hover {
+  color: #fff;
+}
 /* the slides */
 .slick-slide {
   /* margin: 0 10px;
@@ -395,7 +516,26 @@ h1 {
 .footer-btn {
   margin: auto -40px;
 }
+.only-mobile-btn {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
+  .only-mobile-btn {
+    display: block;
+    margin: 30px auto !important;
+  }
+  .inspiring-section__custom-card-def, .inspiring-section__custom-card-2, .inspiring-section__custom-card-3 {
+    margin: 15px auto;
+  }
+  .desktop-btn {
+    display: none;
+  }
+  .graduate-text-col h1 {
+    font-size: 3rem !important;
+  }
+  .graduate-text-col a {
+    margin: auto !important;
+  }
   h1 {
     font-size: 1.75rem !important;
   }
@@ -425,6 +565,14 @@ h1 {
   .register-now {
     width: 50% !important;
     margin: auto;
+  }
+  .graduate-text {
+    padding: 25px 10px;
+    border-radius: 10px;
+    margin: 25px auto;
+  }
+  .graduate-img {
+    text-align: center;
   }
 
   .ellipse-left {
@@ -476,10 +624,10 @@ h1 {
   }
 
   .inspiring-section {
-    margin: 50px 25px !important;
+    margin: 50px 15px !important;
   }
   .img-union {
-    height: 150px !important;
+    height: 250px !important;
   }
 
   .steps-to-apply {
@@ -545,9 +693,29 @@ h1 {
   .grip-blocks-section .col-lg-8 {
     margin: 0px;
   }
+  grip-blocks__txt {
+    margin: auto;
+  }
+  .grip-blocks__img {
+    margin: auto;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 767px) and (min-width: 600px) {
+  .only-mobile-btn {
+    display: block;
+    margin: 30px auto !important;
+  }
+  .inspiring-section__custom-card-def, .inspiring-section__custom-card-2, .inspiring-section__custom-card-3 {
+    margin: 15px auto;
+  }
+  .desktop-btn {
+    display: none;
+  }
+  .graduate-text-col a {
+    margin: auto !important;
+  }
   h1 {
     font-size: 1.75rem !important;
   }
@@ -628,10 +796,10 @@ h1 {
   }
 
   .inspiring-section {
-    margin: 50px 25px !important;
+    margin: 50px 15px !important;
   }
   .img-union {
-    height: 200px !important;
+    height: 300px !important;
   }
 
   .steps-to-apply {
@@ -692,6 +860,15 @@ h1 {
   }
   .footer-btn {
     margin: auto -20px;
+  }
+
+  .graduate-text {
+    padding: 25px 10px;
+    border-radius: 10px;
+    margin: 25px auto;
+  }
+  .graduate-img {
+    text-align: center;
   }
 }
 

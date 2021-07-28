@@ -160,6 +160,7 @@ h1 {
 .grip-blocks-para {
   font-size: 16px;
   text-align: justify;
+  padding-right: 30px;
 }
 .img-grip {
   height: auto;
@@ -519,6 +520,13 @@ h1 {
 .only-mobile-btn {
   display: none;
 }
+.footer__b-name {
+  font-size: 1.25rem;
+}
+.footer__tag-line {
+  font-size: 14px;
+  color: grey;
+}
 @media only screen and (max-width: 600px) {
   .only-mobile-btn {
     display: block;
@@ -541,9 +549,6 @@ h1 {
   }
   .navbar-brand {
     margin: 0 !important;
-  }
-  .img-logo {
-    height: 40px;
   }
 
   .graduate-rotational-section {
@@ -614,6 +619,7 @@ h1 {
   }
   .grip-blocks-para {
     font-size: 14px;
+    padding-right: 0px;
   }
   .ellipse-right,
   .ellipse-right-overlap,
@@ -722,9 +728,6 @@ h1 {
   .navbar-brand {
     margin: 0;
   }
-  .img-logo {
-    height: 40px;
-  }
 
   .graduate-rotational-section {
     margin: 10px 25px !important;
@@ -786,6 +789,7 @@ h1 {
   }
   .grip-blocks-para {
     font-size: 14px;
+    padding-right: 0px;
   }
   .ellipse-right,
   .ellipse-right-overlap,
